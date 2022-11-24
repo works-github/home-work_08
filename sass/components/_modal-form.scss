@@ -1,0 +1,262 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-y: scroll; 
+    
+    .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    min-height: 200px;
+    background-color: #ffffff;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+     }
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form {
+    width: 528px;
+    height: 581px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 41px 40px 41px;
+
+    .close {
+     outline: none;
+     line-height: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     -webkit-transform: translate(-8px, 8px);
+     transform: translate(-8px, 8px);
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     padding: 6px;
+     border: none;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     background-color: #ffffff;
+
+    :hover,:focus {
+     cursor: pointer;
+      fill: #188ce8;
+        }
+
+     &-svg {
+     background-size: contain;
+    width: 11px;
+    height: 11px;
+        
+    transition-duration: $duration;
+    transition-timing-function: $transmition-cubic;
+        }
+    }
+
+    .button-modal {
+     width: 200px;
+     height: 50px;
+     border: none;
+     cursor: pointer;
+    
+     margin-top: 30px;
+    
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.87;
+    
+     color: #ffffff;
+     background: #188ce8;
+    
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+        }
+
+ h2 {
+    font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     letter-spacing: 0.03em;
+    
+     color: $color-heading;
+    
+    margin-bottom: 30px;
+        }
+
+  &-svg {
+      position: absolute;
+      top: 11px;
+      left: 16px;
+  }
+
+ &-input {
+     outline: none;
+     cursor: pointer;
+     width: 100%;
+     height: 40px;
+     margin-bottom: 28px;
+     padding-left: 42px;
+    
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+    
+     transition-duration: $duration;
+    transition-timing-function: $transmition-cubic;
+    
+
+  
+
+   &:focus {
+        border-color: $color-hover;
+    ~.form-svg {
+            fill: $color-hover;
+        }
+
+   + .form-label {
+        color: #2196f3;
+        left: 10px;
+        transform: translateY(-190%);
+    }
+
+    
+    
+    }
+}
+
+&-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-190%);
+    left: 10px;
+}
+
+&-field { 
+    position: relative;
+}
+
+&-label {
+    position: absolute;
+    top: 12px;
+    left: 42px;
+
+    transition-duration: $duration;
+    transition-timing-function: $transmition-cubic;
+}
+
+
+&-textarea {
+    outline: none;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    resize: none;
+
+    transition-duration: $duration;
+    transition-timing-function:  $transmition-cubic;
+
+   &:focus {
+        border-color: $color-hover;
+    }
+}
+
+&-checkbox:checked+.checkbox-icon {
+    background-color: $color-hover;
+    border-color: $color-hover;
+    background-image: url(../img/check.svg);
+    background-origin: border-box;
+    background-size: contain;
+
+    
+
+    transition-duration: $duration;
+    transition-timing-function: $transmition-cubic;
+}
+
+&-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+        }
+}
+
+.checkbox {
+    &-label {
+            display: flex;
+            align-items: center;
+        }
+     
+
+    &-text {
+     color: $color-auxiliary;
+    
+     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+        }
+    
+        &-link {
+     color: $color-hover;
+     text-decoration: underline;
+        }
+
+     &-icon {
+        display: inline-block;
+         width: 16px;
+         height: 15px;
+         border: 2px solid $color-heading;
+         border-radius: 3px;
+        
+         margin-right: 8px;
+        
+         transition-duration: $duration;
+         transition-timing-function: $transmition-cubic;
+         
+        
+
+        }
+      }
+
+      .checkbox-icon:hover {
+                border-color: $color-hover;
+            }
+       
+
+
+
+        
+
+
+
+
+
+
+
+
+

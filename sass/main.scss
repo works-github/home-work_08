@@ -1,0 +1,19 @@
+@import "./utils/variables";
+@import "./base/global-styles";
+@import "./components/logo";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal-form";
+@import "./components/features.scss";
+@import "./components/activity";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/command";
+@import "./components/portfolio";
+@import "./utils/mixins";
+
+ 
+
+  @include generateIcons($iconList);
+
+  

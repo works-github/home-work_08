@@ -1,0 +1,147 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+
+&-studio {
+    color: #ffffff;
+}
+
+svg {
+        fill: #fff;
+    }
+
+b {
+    display: block;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+&-contact {
+     display: flex;
+     flex-direction: column;
+    }
+
+&-title {
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+&-adres {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+&-exile {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+&-networks {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+li {
+     width: 44px;
+     height: 44px;
+
+    &:not(:last-child) {
+     margin-right: 10px;
+        }
+    }
+}
+
+&-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color, fill;
+    transition-duration: $duration;
+    transition-timing-function: $transmition-cubic;
+
+    &:hover,
+    &:focus {
+    background-color: $color-hover;
+        }
+}
+
+&-imput {
+    display: block;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+&-forma {
+    width: 358px;
+    height: 50px;
+
+    margin-right: 12px;
+
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #2f303a;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    padding: 15px 16px 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+&-icon {
+    vertical-align: middle;
+
+     margin-left: 10px;
+}
+
+&-button {
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-align: center;
+
+    color: #ffffff;
+    background-color: $color-hover;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 00.06em;
+    display: inline-block;
+    border-color: transparent;
+    cursor: pointer;
+}
+}

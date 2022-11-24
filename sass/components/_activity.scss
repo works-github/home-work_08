@@ -1,0 +1,49 @@
+.works {
+    color: $color-heading;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&-line {
+     margin-bottom: 50px;
+    }
+
+&-ul {
+     display: flex;
+     flex-wrap: nowrap;
+
+.works-list+.works-list {
+     margin-left: 30px;
+        }
+        }
+
+&-list {
+    position: relative;
+}
+
+&-title {
+    color: #ffffff;
+    position: absolute;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+}

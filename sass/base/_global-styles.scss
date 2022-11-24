@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* --убрать точки из списка */
+  }
+  
+  p {
+    user-select: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    /* width: 100%; */
+    height: auto;
+  }
+
+  .conteiner {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  body {
+    margin: 0;
+    background-color: #ffffff;
+    color: $color-auxiliary;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+  }

@@ -1,0 +1,117 @@
+.main-nav {
+    display: flex;
+  
+    align-items:center;
+
+  }
+
+   .site-nav {
+    display: flex;
+    margin-left: 85px;
+
+    .item + .item {
+        margin-left: 50px;
+      }
+
+    .link:hover,
+     .link:focus {
+              color: $color-hover;
+     }
+
+       .current {
+        color: $color-hover;
+       }
+
+     .underline:hover::after {
+       transform: scaleY(1);
+       opacity: 1;
+       width: 100%;
+     }
+   }
+
+     .link {
+       display: block;
+       position: relative;
+       justify-content: center;
+       align-items: center;
+      
+       color: $color-heading;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+       padding-top: 32px;
+       padding-bottom: 32px;
+       transition-duration: $duration ;
+       transition-timing-function: $transmition-cubic;
+  }
+
+        .underline:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          border-radius: 2px;
+          width: 0%;
+          height: 5px;
+          background-color: $color-hover;
+          transition-duration: $duration;
+          transition-timing-function: $transmition-cubic;
+          transform: scaleX(0);
+          opacity: 0;
+           }
+
+          .current:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            border-radius: 2px;
+            width: 100%;
+            height: 5px;
+            background-color: $color-hover;
+            transition-duration: $duration;
+            transition-timing-function: $transmition-cubic;
+          }
+                
+ 
+       .auth-nav {
+        display: flex;
+          align-items: center;
+          margin-left: auto;
+
+          .item+.item {
+              margin-left: 50px;
+            }
+
+         .link {
+         color: $color-auxiliary;
+         }
+         .link:hover,
+          .link:focus {
+            color: $color-hover;
+         }
+
+         .connection {
+           fill: $color-auxiliary;
+           margin-right: 10px;
+           margin-left: 0;
+           transition-duration: $duration;
+           transition-timing-function: $transmition-cubic;
+         }
+
+         .item:hover .connection,
+         .item:focus .connection {
+           color: $color-hover;
+           fill: $color-hover ;
+         }
+       }
+
+       
+
+
+       
+
+
+    
+
