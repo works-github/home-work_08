@@ -1019,17 +1019,17 @@ body {
 }
 
 .plate::before {
-  background-image: url("../images/plate.svg");
+  background-image: url("../img/plate.svg");
 }
 
 .clock::before {
-  background-image: url("../images/clock.svg");
+  background-image: url("../img/clock.svg");
 }
 
 .computer::before {
-  background-image: url("../images/computer.svg");
+  background-image: url("../img/computer.svg");
 }
 
 .astronaut::before {
-  background-image: url("../images/astronaut.svg");
+  background-image: url("../img/astronaut.svg");
 }/*# sourceMappingURL=main.css.map */
